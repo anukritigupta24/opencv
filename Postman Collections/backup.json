@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "3a356180-55f5-438d-90ed-1fd84e40da7e",
+		"name": "test-coll",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{baseUrl}}/",
+			"_postman_id": "38fec856-19df-4375-9e0b-9e09310a38eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": "{{baseUrl}}/"
+			},
+			"response": [
+				{
+					"id": "99e46b7a-19c3-47a8-8665-6911d094d799",
+					"name": "300 response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/"
+					},
+					"status": "Multiple Choices",
+					"code": 300,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "\"{\\n \\\"versions\\\": [\\n       {\\n         \\\"status\\\": \\\"CURRENT\\\",\\n         \\\"updated\\\": \\\"2011-01-21T11:33:21Z\\\",\\n         \\\"id\\\": \\\"v2.0\\\",\\n         \\\"links\\\": [\\n             {\\n                 \\\"href\\\": \\\"http://127.0.0.1:8774/v2/\\\",\\n                 \\\"rel\\\": \\\"self\\\"\\n             }\\n         ]\\n     },\\n     {\\n         \\\"status\\\": \\\"EXPERIMENTAL\\\",\\n         \\\"updated\\\": \\\"2013-07-23T11:33:21Z\\\",\\n         \\\"id\\\": \\\"v3.0\\\",\\n         \\\"links\\\": [\\n             {\\n                 \\\"href\\\": \\\"http://127.0.0.1:8774/v3/\\\",\\n                 \\\"rel\\\": \\\"self\\\"\\n             }\\n         ]\\n     }\\n ]\\n}\\n\""
+				},
+				{
+					"id": "c4993068-9a9b-45fd-be91-e4fb54bd952d",
+					"name": "200 response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n\t\"versions\": [\n\t\t{\n\t\t\t\"status\": \"CURRENT\",\n\t\t\t\"updated\": \"2011-01-21T11:33:21Z\",\n\t\t\t\"id\": \"v2.0\",\n\t\t\t\"links\": [\n\t\t\t\t{\n\t\t\t\t\t\"href\": \"http://127.0.0.1:8774/v2/\",\n\t\t\t\t\t\"rel\": \"self\"\n\t\t\t\t}\n\t\t\t]\n\t\t},\n\t\t{\n\t\t\t\"status\": \"EXPERIMENTAL\",\n\t\t\t\"updated\": \"2013-07-23T11:33:21Z\",\n\t\t\t\"id\": \"v3.0\",\n\t\t\t\"links\": [\n\t\t\t\t{\n\t\t\t\t\t\"href\": \"http://127.0.0.1:8774/v3/\",\n\t\t\t\t\t\"rel\": \"self\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}"
+				}
+			]
+		},
+		{
+			"name": "{{baseUrl}}/v2",
+			"_postman_id": "005b213d-dbdf-4ce4-b2b1-16860ae4406b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": "{{baseUrl}}/v2"
+			},
+			"response": [
+				{
+					"id": "7439b400-a00c-4744-b7aa-453914f15916",
+					"name": "203 response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2"
+					},
+					"status": "Non-Authoritative Information (since HTTP/1.1)",
+					"code": 203,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n\t\"version\": {\n\t\t\"status\": \"CURRENT\",\n\t\t\"updated\": \"2011-01-21T11:33:21Z\",\n\t\t\"media-types\": [\n\t\t\t{\n\t\t\t\t\"base\": \"application/xml\",\n\t\t\t\t\"type\": \"application/vnd.openstack.compute+xml;version=2\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"base\": \"application/json\",\n\t\t\t\t\"type\": \"application/vnd.openstack.compute+json;version=2\"\n\t\t\t}\n\t\t],\n\t\t\"id\": \"v2.0\",\n\t\t\"links\": [\n\t\t\t{\n\t\t\t\t\"href\": \"http://23.253.228.211:8774/v2/\",\n\t\t\t\t\"rel\": \"self\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"href\": \"http://docs.openstack.org/api/openstack-compute/2/os-compute-devguide-2.pdf\",\n\t\t\t\t\"type\": \"application/pdf\",\n\t\t\t\t\"rel\": \"describedby\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"href\": \"http://docs.openstack.org/api/openstack-compute/2/wadl/os-compute-2.wadl\",\n\t\t\t\t\"type\": \"application/vnd.sun.wadl+xml\",\n\t\t\t\t\"rel\": \"describedby\"\n\t\t\t}\n\t\t]\n\t}\n}"
+				},
+				{
+					"id": "f68a99f0-901b-4f36-9247-3480d3c76420",
+					"name": "200 response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n\t\"version\": {\n\t\t\"status\": \"CURRENT\",\n\t\t\"updated\": \"2011-01-21T11:33:21Z\",\n\t\t\"media-types\": [\n\t\t\t{\n\t\t\t\t\"base\": \"application/xml\",\n\t\t\t\t\"type\": \"application/vnd.openstack.compute+xml;version=2\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"base\": \"application/json\",\n\t\t\t\t\"type\": \"application/vnd.openstack.compute+json;version=2\"\n\t\t\t}\n\t\t],\n\t\t\"id\": \"v2.0\",\n\t\t\"links\": [\n\t\t\t{\n\t\t\t\t\"href\": \"http://127.0.0.1:8774/v2/\",\n\t\t\t\t\"rel\": \"self\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"href\": \"http://docs.openstack.org/api/openstack-compute/2/os-compute-devguide-2.pdf\",\n\t\t\t\t\"type\": \"application/pdf\",\n\t\t\t\t\"rel\": \"describedby\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"href\": \"http://docs.openstack.org/api/openstack-compute/2/wadl/os-compute-2.wadl\",\n\t\t\t\t\"type\": \"application/vnd.sun.wadl+xml\",\n\t\t\t\t\"rel\": \"describedby\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"href\": \"http://docs.openstack.org/api/openstack-compute/2/wadl/os-compute-2.wadl\",\n\t\t\t\t\"type\": \"application/vnd.sun.wadl+xml\",\n\t\t\t\t\"rel\": \"describedby\"\n\t\t\t}\n\t\t]\n\t}\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "0cee8bc4-3b4a-409e-b114-0d4fd2039304",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
